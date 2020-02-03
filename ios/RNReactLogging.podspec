@@ -1,9 +1,8 @@
 require 'json'
-  
 package = JSON.parse(File.read('../package.json'))
 
 Pod::Spec.new do |s|
-  s.name         = package['name']
+  s.name         = "RNReactLogging"
   s.version      = package['version']
   s.summary      = package['description']
   s.license      = package['license']
