@@ -1,4 +1,5 @@
 require 'json'
+
 package = JSON.parse(File.read('../package.json'))
 
 Pod::Spec.new do |s|
@@ -12,9 +13,8 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/philzcoffee/react-native-file-log.git", :tag => "master" }
-  s.source_files  = "RNReactLogging/**/*.{h,m}"
+  s.source_files  = "*.{h,m}"
   s.requires_arc = true
-
 
   s.dependency "React"
 end
